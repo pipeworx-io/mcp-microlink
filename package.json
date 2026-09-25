@@ -1,18 +1,32 @@
 {
   "name": "@pipeworx/mcp-microlink",
-  "version": "0.1.0",
-  "description": "MCP server for URL metadata extraction and screenshots via Microlink API",
+  "version": "0.1.1",
+  "description": "Microlink MCP — wraps Microlink API (free tier, no auth required)",
+  "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "files": ["src"],
-  "scripts": {
-    "build": "tsc",
-    "check": "tsc --noEmit"
+  "bin": {
+    "mcp-microlink": "bin/cli.js"
   },
-  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "microlink", "metadata", "screenshot"],
-  "author": "Pipeworx",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "microlink"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-microlink.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-2dc7f6109f571e23a128eece5d8330f0457f136821a4afca34f9aaff3049b95b",
+    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
   }
 }
