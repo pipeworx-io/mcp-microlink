@@ -1,14 +1,14 @@
 # mcp-microlink
 
-Microlink MCP — wraps Microlink API (free tier, no auth required)
+Unofficial Microlink MCP — wraps Microlink API (free tier, no auth required)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1865+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2007+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_metadata` | Extract metadata from any URL to preview page content. Returns title, description, image, author, publisher, logo, and structured data—useful when you need to understand a webpage without visiting it directly. |
+| `microlink_get_metadata` | Extract metadata from any URL to preview page content. Returns title, description, image, author, publisher, logo, and structured data—useful when you need to understand a webpage without visiting it directly. |
 | `take_screenshot` | Capture a screenshot of any webpage. Returns image URL showing the rendered page layout and visual content—use to verify page state or design. |
 
 ## Quick Start
@@ -55,7 +55,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1865+ data sources. The
+Both URLs reach the same gateway and the same 2007+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

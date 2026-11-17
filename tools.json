@@ -1,6 +1,6 @@
 [
   {
-    "name": "get_metadata",
+    "name": "microlink_get_metadata",
     "description": "Extract metadata from any URL to preview page content. Returns title, description, image, author, publisher, logo, and structured data—useful when you need to understand a webpage without visiting it directly.",
     "inputSchema": {
       "type": "object",
